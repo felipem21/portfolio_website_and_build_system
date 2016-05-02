@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Profiler</title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Bootstrap -->
+    <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FONTS -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<!-- CSS FILE -->
+	<link rel="stylesheet" type="text/css" href="css/all.min.css">
+	<!-- jQuery -->
+	<script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
+	<!-- Bootstrap js -->
+	<script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	
+	<!-- HIGHCHARTS -->
+	<script type="text/javascript" src="/bower_components/highcharts/highcharts.js"></script>
+	<script type="text/javascript" src="/bower_components/highcharts/highcharts-more.js"></script>
+	<script type="text/javascript" src="/bower_components/highcharts/modules/solid-gauge.js"></script>
+	
+</head>
+
+	<!-- NAVBAR
+	================================================== -->
+  <body data-spy="scroll" data-target=".navbar" data-offset="85">
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+          <!-- menu button for mobile -->
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#myCarousel">Felipe Morales</a>
+            </div>
+            <!-- mobile button ends -->
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav ">
+                <li class="active"><a href="#myCarousel">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#biography">Biography</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Get To Know Me<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#email">Email Me</a></li>                    
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </div>
+
+	<!-- Carousel
+    ================================================== -->
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner img-responsive" role="listbox">
+        <div class="item active">
+          <img class="first-slide" src="images/new_two.png" alt="First slide">
+          	<div class="container">
+        			<div class="carousel-caption">
+        				<p>The greatest fear in the world is of the opinions of others...And the moment you are unafraid of the crowd you are no longer a sheep, you become a lion. A great roar araises in your heart, the roar of freedom.
+        				<p>
+        			</div>
+        	</div>
+        </div>
+        <div class="item">
+          	<img class="second-slide img-responsive" src="images/computer_2.png" alt="Second slide">
+          	<div class="container">
+        			<div class="carousel-caption">
+        				<h2>If there's even a slight chance...</h2>
+        				<p>At getting something that will make you happy, RISK IT.. Life is too short and happiness is too rare.<p>
+        			</div>
+        	</div>
+         </div>
+        <div class="item">
+		    <img class="third-slide img-responsive" src="images/new_one.png" alt="Third slide">
+        		<div class="container">
+        			<div class="carousel-caption">
+        				<h2>Walk the talk</h2>
+        				<p>Make someone laugh, raise hope ... Raise the bar and leave your mark ... Live united </p>
+        			</div>
+        		</div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div><!-- /.carousel -->
+
+    <div class="container-fluid marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+      	<h1 id="skills">Skills</h1>
+      	<br>
+        <div class="col-lg-4">
+
+        <div class="skills_section">
+    		<div id="html5"></div>
+ 		</div>	
+ 		<br>
+          <!-- <h2>HTML5</h2> -->
+          <img src="images/HTML5_Logo_256.png" width="140" height="140">
+          <!-- <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p> -->
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+        
+        <div class="skills_section">
+    		<div id="css3"></div>
+ 		</div>	
+ 		<br>
+          <img src="images/css3.png" width="140" height="140">
+          <!-- <h2>CSS3</h2> -->
+          <!-- <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p> -->
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+        
+        <div class="skills_section">
+    		<div id="javascript"></div>
+ 		</div>	
+ 		<br>
+          <img src="images/js.png" width="140" height="140">
+          <!-- <h2>JAVASCRIPT</h2> -->
+          <!-- <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p> -->
+        </div><!-- /.col-lg-4 -->
+        <br>
+        <!-- Modal button -->
+    <div class="col-lg-4 col-lg-offset-4 centered">
+        <button class="btn btn-lg" data-toggle="modal" data-target="#myModal" >Check Out My Skills</button>
+        <!-- Modal -->
+		<div class="modal fade" id="myModal" role="dialog">
+		  <div class="modal-dialog">
+
+		    <!-- Modal content-->
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h4><span class="glyphicon glyphicon-equalizer"></span> More Of My Skills</h4>
+		      </div>
+		      <div class="modal-body">
+		      	<table style="width: 100%">
+				
+			      		<td class="glyphicon glyphicon-ok"> JQUERY</td>
+			      		<td class="glyphicon glyphicon-ok"> HTML</td>
+			      		<td class="glyphicon glyphicon-ok"> CSS</td>
+			      		<td class="glyphicon glyphicon-ok"> GULP</td>
+			      	
+			      	
+			      		<td class="glyphicon glyphicon-ok"> GRUNT</td>
+			      		<td class="glyphicon glyphicon-ok"> AJAX</td>
+			      		<td class="glyphicon glyphicon-ok"> C-SHARP</td>
+			      		<td class="glyphicon glyphicon-ok"> SQL</td>
+			      	
+			      
+			      		<td class="glyphicon glyphicon-ok"> XHTML</td>
+			      		<td class="glyphicon glyphicon-ok"> B-STRAP</td>
+			      		<td class="glyphicon glyphicon-ok"> SASS</td>
+			      		<td class="glyphicon glyphicon-ok"> NPM</td>
+		      			<td class="glyphicon glyphicon-ok"> NODE.JS</td>
+		      			
+		      	</table>
+		        
+		      </div>
+		      <div class="modal-footer">
+		        <button type="submit" class="btn pull-left" data-dismiss="modal">
+		          <span class="glyphicon glyphicon-remove"></span> Exit
+		        </button>
+		       </div>
+		    </div>
+		  </div>
+		</div>
+	</div> <!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+	</div><!-- /.container -->
+	<br>
+      <!-- BIOGRAPHY -->
+    <div class="container-fluid sections">
+    	<div class="row">	      
+
+			<div class="container-fluid bg-grey">
+				  <div class="row">
+				    <div class="col-sm-4">
+				      <span class="glyphicon glyphicon-globe logo"></span>
+				    </div>
+				    <div class="col-sm-8">
+				    <h1 id="biography">Biography</h1>
+				      <h3>Profile</h3>
+				      	<p class="bio_p">I was born and raised in Colombia, moved to the United States when I was 17 years old. In my down time, I enjoy learning new technologies and improving my skills. I also like to network with other colleagues and spend quality time with my family and fiancée.</p>
+				      <h3>Objective</h3>
+				      	<p class="bio_p">I am a Junior Front End Developer. I have worked in a range of projects from customizing user experience with esignature services to building responsive financial loan applications including, Apple Inc. I am seeking a role where I am given the opportunity to aid in fulfilling the organization’s needs, as I expand my experience, skills, and expertise.</p>
+				      	<h3>Would like to know more ..? </h3>
+				      	<p class="bio_p">Download my resume and visit the get to know me section.</p>
+					<br>
+					
+					<div class="btn btn-lg">
+						<a href="documents/Luis-F-Morales-Resume.pdf" download="Luis-F-Morales-Resume.pdf" style="color: #C5BD98">Download My Resume</a>
+					</div>
+					
+					</div>
+				  </div>
+			</div> <!-- /.container-fluid sections -->
+    	</div>
+    	<br>  
+    </div>
+	<!-- PROJECTS -->
+	<div class="container-fluid">
+		<!-- <div style="height: 500px"> -->
+			<div style="margin-top: 50px">
+				<h1 id="projects">Projects</h1>
+					<div class="row">
+					  <div class="col-sm-6 col-md-4">
+						    <div class="thumbnail" style="height: 360px">
+						      <img src="images/top_notch.png" style="height: 200px; width: 370px;">
+						      <div class="caption">
+						        <h3 style="text-align: center;">Apple</h3>
+						        <p class="project_p">A finance web application that is being used in the apple stores in the UK for customers to apply for financial credit when purchasing an apple item.</p>
+						        <!-- <p><a class="btn btn-md glyphicon glyphicon-ok center-block liveOne" role="button"> LIVE</a></p>
+						        <p class="project_p showUpOne">Unfotunately the link can not be provided.</p> -->
+						      </div>
+						    </div>
+						</div>
+						   <div class="col-sm-6 col-md-4">
+						    <div class="thumbnail">
+						      <img src="images/offline.png" style="height: 200px; width: 370px;">
+						      <div class="caption" style="height: 150px">
+						        <h3 style="text-align: center;">Offline Application</h3>
+						        <p class="project_p">A finance web appplication that does not need internet access for the end user to submit an application.</p>
+						        <!-- <p><a class="btn btn-md glyphicon glyphicon-ok center-block liveTwo" role="button"> LIVE</a></p>
+						        <p class="project_p showUpTwo">Unfotunately the link can not be provided.</p> -->
+						      </div>
+						    </div>
+						  </div>
+						   <div class="col-sm-6 col-md-4">
+						    <div class="thumbnail">
+						      <img src="images/sign_it.png" style="height: 200px; width: 370px;">
+						      <div class="caption" style="height: 150px">
+						        <h3 style="text-align: center;">Electronic Signing</h3>
+						        <p class="project_p">An integration tool used by different areas of the bank in order to sign documents electronically within the business or by customers.</p>
+						        <!-- <p><a class="btn btn-md glyphicon glyphicon-ok center-block liveThree" role="button"> LIVE</a></p>
+						        <p class="project_p showUpThree">Unfotunately the link can not be provided.</p> -->
+						      </div>
+						    </div>						  
+						  </div>
+					 </div> 
+				</div>
+			</div>
+		<!-- POROJECTS END -->
+
+	<!-- CONTACT FORM -->
+	<div class="container-fluid">
+		<div class="row sections">
+			<div class= "col-xs-12 col-sm-6">
+			<h1 id="email" style="text-align: center;">Contact Me</h1>
+				<div style="height: 450px;">					
+					<div class="modal-content modal_edit">
+				      <div class="modal-header" style="background-color: #56664C; border-radius: 6px;">
+				        <h4 class="add_info"><span class="glyphicon glyphicon-lock"></span> Add your Info</h4>
+				      </div>
+				      <div class="modal-body">
+				        <form role="form" name="myForm" action="MAILTO:contact@felipemorrales.com" method="post" enctype="text/plain">
+				          <div class="form-group">
+				            <label for="name"><span class="glyphicon glyphicon-pencil gyph_modal"></span> Enter Your Name</label>
+				            <input type="text" class="form-control" name="name" placeholder="Name">
+				          </div>
+				          <div class="form-group">
+				            <label for="usrname"><span class="glyphicon glyphicon-user gyph_modal"></span> Send From</label>
+				            <input type="email" class="form-control" name="usrname" placeholder="Enter email">
+				          </div>
+				          <div class="form-group">
+				            <label for="comment"><span class="glyphicon glyphicon-book gyph_modal"></span> Enter a Message</label>
+				            <input type="text" class="form-control" name="comment" placeholder="Write your Message">
+				          </div>
+				          <button type="submit" class="btn btn-block btn-lg">Send</button>
+				        </form>
+				      </div>				      
+				      <br>
+					</div> <!-- ./modal form over -->
+				</div>
+			</div>		  
+			<div class= "col-xs-12 col-sm-6">
+				<h1 id="email" style="text-align: center;">You can also find me at</h1>
+					<div class="container-fluid text-center">
+						<p><a href="https://github.com/felipem21/" target="_blank"><img src="images/Github-50.png"></a></p>
+						<h3>Git-Hub</h3>
+						<p><a href="https://www.linkedin.com/in/felipemorales1/" target="_blank"><img src="images/Linked-50.png"></a></p>
+						<h3>LinkedIn</h3>
+						<a href="https://www.instagram.com/pipem21/" target="_blank"><img src="images/insta-50.png"></a>
+						<h3>Instagram</h3>
+					</div>
+					<br>
+			</div>
+			</div>
+		</div>
+	</div>
+      <!-- FOOTER -->
+      <footer class="container-fluid">
+      <br>
+<!--         <p class="pull-right"><a href="#">Back to top</a></p> -->
+        <a href="#myCarousel" title="To Top">
+        <span class="glyphicon glyphicon-chevron-up pull-right"></span>
+        </a>
+        <p style="text-align: center;">&copy; 2016 felipemorrales.com</p>
+      </footer>
+
+    
+
+
+	<!-- JS FILE -->
+	<script type="text/javascript" src="js/all.min.js"></script>
+</body>
+</html>
