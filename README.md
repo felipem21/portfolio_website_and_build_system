@@ -1,1 +1,1 @@
-# Just the source code of my portfolio website from scratch
+# Just the source code of my portfolio website done from scratch.
